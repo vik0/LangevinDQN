@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment files.
+bin/
+lib/
+lib64/
+share/
+pyvenv.cfg
+
