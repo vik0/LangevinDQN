@@ -24,9 +24,11 @@
 # ============================================================================
 """A simple implementation of Langevin DQN with ensembles.
 
+- This is code for Langevin DQN paper (https://arxiv.org/abs/2002.07282))
 - This agent is implemented with Bsuite baselines code 
   (https://github.com/deepmind/bsuite/tree/master/bsuite/baselines). You need 
   to install bsuite to be able to run this code.
+
 """
 
 import copy
