@@ -26,8 +26,9 @@
 
 - This is code for Langevin DQN paper (https://arxiv.org/abs/2002.07282))
 - This agent is implemented with Bsuite baselines code 
-  (https://github.com/deepmind/bsuite/tree/master/bsuite/baselines). You need 
-  to install bsuite to be able to run this code.
+  (https://github.com/deepmind/bsuite/tree/master/bsuite/baselines) and 
+  specifically the code for Boot DQN. You need to install bsuite to be able to
+  run this code.
 
 """
 
@@ -238,7 +239,7 @@ def default_agent(
   ensemble = make_ensemble(
       num_actions=action_spec.num_values, num_ensemble=num_ensemble)
   optimizer = snt.optimizers.Adam(learning_rate=1e-3)
-  return LangevinBootstrappedDqn(
+  return EnsembleLangevinDqn(
       obs_spec=obs_spec,
       action_spec=action_spec,
       ensemble=ensemble,
