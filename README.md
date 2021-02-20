@@ -39,8 +39,10 @@ git clone https://github.com/vik0/LangevinDQN.git
 
 ## Running an experiment 
 
+Once you are inside the LangevinDQN repository
+
 - Langevin DQN:  `python run_point_estimate.py` 
 
 - Ensemble Langevin DQN: `python run_ensemble_langevin_dqn.py` 
 
-Each of the run files mentioned above has flags which set the values of various hyperparameters. We can change them to run experiments with different hyperparameter settings. For example, if we want to run Ensemble Langevin DQN of size 10 on a deep sea environment of size 10 (Bsuite id - deep_sea/0), we can simply run `python run_ensemble_langevin_dqn.py --bsuite_id=deep_sea/0 --num_ensemble=10`. Alternatively, one can simply edit the run file and run it.
+Each of the run files mentioned above has flags which set the values of various parameters. We can change them to run experiments with different hyperparameter settings. For example, if we want to run Ensemble Langevin DQN of size 10 on a deep sea environment of size 10 (Bsuite id - deep_sea/0), we can simply run `python run_ensemble_langevin_dqn.py --bsuite_id=deep_sea/0 --num_ensemble=10`. Alternatively, one can simply edit the run file and run it.
