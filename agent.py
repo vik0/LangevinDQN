@@ -186,10 +186,8 @@ class EnsembleLangevinDqn(base.Agent):
     if new_timestep.last():
       self._active_head = self._rng.randint(self._num_ensemble)
 
-
     if self._replay.size < self._min_replay_size:
       return
-
 
     self._total_update_steps += 1
 
